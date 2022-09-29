@@ -1,0 +1,2 @@
+https://ifttt.com/applets/
+https://raspberrypi-guide.github.io/electronics/using-usb-webcams

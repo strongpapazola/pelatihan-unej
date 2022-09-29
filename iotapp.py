@@ -4,10 +4,13 @@ status = 'off'
 @app.route('/')
 def root():
     return 'Aplikasi Lampu IoT'
+# http://127.0.0.1:3001/status_lampu
 @app.route('/status_lampu')
 def status_lampu():
     global status
     return make_response(jsonify({'status_lampu': status}), 200)
+# http://127.0.0.1:3001/set_lampu/on
+# http://127.0.0.1:3001/set_lampu/off
 @app.route('/set_lampu/<set>')
 def set_lampu(set):
     global status
